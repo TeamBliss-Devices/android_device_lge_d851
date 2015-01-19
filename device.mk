@@ -27,14 +27,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
 
-# Wifi
-PRODUCT_PACKAGES += \
-    libnetcmdiface
-
 #Viper4Android
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)viper4android/viper4android.apk:system/app/Viper4Android/viper4android.apk \
     $(LOCAL_PATH)viper4android/lib/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so 
+
+# Wifi
+PRODUCT_PACKAGES += \
+    libnetcmdiface
 
 # Get BCMDHD configs
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
