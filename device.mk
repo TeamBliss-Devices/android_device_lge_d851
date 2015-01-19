@@ -29,8 +29,8 @@ PRODUCT_COPY_FILES += \
 
 #Viper4Android
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)viper4android/viper4android.apk:system/app/Viper4Android/viper4android.apk \
-    $(LOCAL_PATH)viper4android/lib/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so 
+    $(LOCAL_PATH)/viper4android/viper4android.apk:system/app/Viper4Android/viper4android.apk \
+    $(LOCAL_PATH)/viper4android/lib/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so 
 
 # Wifi
 PRODUCT_PACKAGES += \
