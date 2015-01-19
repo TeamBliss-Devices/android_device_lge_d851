@@ -23,9 +23,6 @@ $(call inherit-product-if-exists, vendor/lge/d851/d851-vendor.mk)
 PRODUCT_COPY_FILES += \
     device/lge/g3-common/configs/mixer_paths_bcm.xml:system/etc/mixer_paths.xml
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
@@ -33,6 +30,11 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     libnetcmdiface
+
+#Viper4Android
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)viper4android/viper4android.apk:system/app/Viper4Android/viper4android.apk \
+    $(LOCAL_PATH)viper4android/lib/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so 
 
 # Get BCMDHD configs
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
