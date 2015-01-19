@@ -31,6 +31,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnetcmdiface
 
+#Viper4Android
+PRODUCT_COPY_FILES += \
+    viper4android/viper4android.apk:system/app/Viper4Android/viper4android.apk \
+    viper4android/lib/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so 
+
 # Get BCMDHD configs
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
