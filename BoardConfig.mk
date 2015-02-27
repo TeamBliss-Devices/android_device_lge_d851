@@ -36,7 +36,12 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 27325360128
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lge/d851/rootdir/etc/fstab.g3
 
-Bliss_Build_Block:=1
+# BlissPop Config Flags
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := true
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
 
 # Wifi
 BOARD_WLAN_DEVICE := bcmdhd
