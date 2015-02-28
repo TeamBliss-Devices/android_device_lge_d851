@@ -42,6 +42,7 @@ BLISS_O3 := true
 BLISS_STRICT := true
 BLISS_GRAPHITE := true
 BLISS_KRAIT := true
+Bliss_Build_Block:=1
 
 # Wifi
 BOARD_WLAN_DEVICE := bcmdhd
