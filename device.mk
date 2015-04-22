@@ -27,10 +27,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
 
-# Thermal
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
-
 # Select Tmobile LTE IPV6 on first boot
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/apn/apns-conf.xml:system/etc/apns-conf.xml
